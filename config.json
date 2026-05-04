@@ -18,6 +18,9 @@
         "microphone": "*"
     },
     "public": true,
+    "assets": {
+        "supportedLanguages": ["zh-cn", "en"]
+    },
     "blocks": [
         {
             "category": "机器人通用控制V1.01",
