@@ -1,0 +1,63 @@
+{
+    "name": "sanshi-microbitkit",
+    "version": "0.3.25",
+    "description": "micro:bit 机器人控制扩展库 - 电机、舵机、麦轮、巡线",
+    "author": "Little-Stone",
+    "email": "",
+    "license": "MIT",
+    "platform": ["microbit"],
+    "main": "main.ts",
+    "files": [
+        "main.ts",
+        "motorx.cpp"
+    ],
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
+    },
+    "public": true,
+    "blocks": [
+        {
+            "category": "机器人通用控制V1.01",
+            "color": "#FF7A00",
+            "icon": "🔧",
+            "blocks": [
+                "初始化 驱动板",
+                "设置 %motor 速度 %speed",
+                "停止 %motor",
+                "设置 180°舵机 S%pin 角度为 %angle",
+                "设置 180°私有舵机 S%pin 角度为 %angle",
+                "设置 360°舵机 S%pin 速度 %speed\\%",
+                "关闭舵机 S%pin (释放)"
+            ]
+        },
+        {
+            "category": "麦轮车",
+            "color": "#0078D7",
+            "icon": "🎮",
+            "blocks": [
+                "麦轮移动 方向 %dir 速度 %speed",
+                "麦轮原地旋转 %dir 速度 %speed",
+                "麦轮移动 方向 %dir 速度 %speed 持续 %time 秒"
+            ]
+        },
+        {
+            "category": "巡线车",
+            "color": "#E65100",
+            "icon": "🚜",
+            "blocks": [
+                "遇 %stopType 停车，强力巡线 (2驱) 满速 %speed",
+                "设置巡线模式为 %color",
+                "传感器 %sensor 在线上",
+                "读取 传感器 %sensor 原始值",
+                "编码器 %motor 清零",
+                "读取 %motor 编码器计数",
+                "以 %speed 速度 %dir 持续 %time 秒",
+                "以 %speed 速度 %dir 直到传感器 %sensor 触发",
+                "巡线 速度 %speed 持续 %time 秒",
+                "巡线 速度 %speed 直到遇到 %crossType"
+            ]
+        }
+    ]
+}
