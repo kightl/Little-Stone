@@ -1,25 +1,30 @@
 {
-    "id": "sanshimicrobitkit",
-    "name": "sanshi-microbitkit",
-    "version": "0.3.25",
-    "description": "micro:bit 机器人控制扩展库 - 电机、舵机、麦轮、巡线",
+    "name": {
+        "zh-cn": "sanshi-microbitkit",
+        "en": "sanshi-microbitkit"
+    },
+    "description": {
+        "zh-cn": "micro:bit 机器人控制扩展库 - 电机、舵机、麦轮、巡线",
+        "en": "micro:bit robot control extension library - motor, servo, mecanum wheel, line tracking"
+    },
     "author": "Little-Stone",
     "email": "",
     "license": "MIT",
-    "platform": ["microbit"],
-    "main": "main.ts",
-    "files": [
-        "main.ts",
-        "motorx.cpp"
-    ],
-    "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
-    },
-    "public": true,
-    "assets": {
-        "supportedLanguages": ["zh-cn", "en"]
+    "isBoard": false,
+    "id": "sanshimicrobitkit",
+    "platform": ["win", "mac", "web"],
+    "version": "0.3.25",
+    "asset": {
+        "arduinoC": {
+            "dir": "",
+            "version": "0.3.25",
+            "board": ["microbit"],
+            "main": "main.ts",
+            "files": [
+                "main.ts",
+                "motorx.cpp"
+            ]
+        }
     },
     "blocks": [
         {
