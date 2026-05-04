@@ -16,7 +16,7 @@
     "version": "0.3.25",
     "asset": {
         "arduinoC": {
-            "dir": "",
+            "dir": "arduinoC/",
             "version": "0.3.25",
             "board": ["microbit"],
             "main": "main.ts",
